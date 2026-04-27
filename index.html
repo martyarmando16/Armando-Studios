@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armando Studios | Producción Audiovisual</title>
+    <meta name="description" content="Armando Studios - Producción audiovisual, streaming, videoclips, eventos en vivo, diseño gráfico y marketing digital en Perú.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-lens">
+                <div class="lens-ring"></div>
+                <div class="lens-ring"></div>
+                <div class="lens-ring"></div>
+            </div>
+            <span class="loader-text">ARMANDO STUDIOS</span>
+        </div>
+    </div>
+
+    <!-- Cursor follower -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">▶</span>
+                <span class="logo-text">ARMANDO<span class="logo-accent">STUDIOS</span></span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link" data-i18n="nav_about">Sobre Mí</a>
+                <a href="#services" class="nav-link" data-i18n="nav_services">Servicios</a>
+                <a href="#experience" class="nav-link" data-i18n="nav_experience">Experiencia</a>
+                <a href="#projects" class="nav-link" data-i18n="nav_projects">Proyectos</a>
+                <a href="#skills" class="nav-link" data-i18n="nav_skills">Habilidades</a>
+                <a href="#contact" class="nav-link" data-i18n="nav_contact">Contacto</a>
+            </div>
+            <div class="nav-controls">
+                <button class="toggle-btn" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon icon-moon"></i>
+                    <i class="fas fa-sun icon-sun"></i>
+                </button>
+                <button class="toggle-btn lang-btn" id="langToggle" aria-label="Change language">
+                    EN
+                </button>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="film-grain"></div>
+            <div class="hero-particles" id="heroParticles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">
+                <span class="rec-dot"></span> <span data-i18n="hero_badge">PRODUCCIÓN AUDIOVISUAL</span>
+            </div>
+            <h1 class="hero-title" data-aos="fade-up">
+                <span class="title-line">ARMANDO</span>
+                <span class="title-line title-outline">STUDIOS</span>
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-delay="200" data-i18n="hero_subtitle" data-i18n-html="true">
+                Transformamos ideas en producciones audiovisuales de impacto. 
+                <br>Streaming · Videoclips · Eventos · Marketing Digital
+            </p>
+            <div class="hero-cta" data-aos="fade-up" data-delay="400">
+                <a href="#projects" class="btn btn-primary">
+                    <span data-i18n="hero_btn_projects">Ver Proyectos</span>
+                    <i class="fas fa-play"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span data-i18n="hero_btn_contact">Contactar</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="hero-stats" data-aos="fade-up" data-delay="600">
+                <div class="stat">
+                    <span class="stat-number" data-count="7">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label" data-i18n="stat_experience">Años de Experiencia</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="20">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label" data-i18n="stat_projects">Proyectos Realizados</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="15">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label" data-i18n="stat_clients">Clientes Satisfechos</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+        <div class="cine-bar cine-bar-top"></div>
+        <div class="cine-bar cine-bar-bottom"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><span class="tag-number">01</span> <span data-i18n="about_tag">SOBRE MÍ</span></span>
+                <h2 class="section-title" data-i18n="about_title" data-i18n-html="true">La Visión Detrás<br><span class="text-accent">de la Cámara</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-visual" data-aos="fade-right">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-frame">
+                            <div class="frame-corner frame-tl"></div>
+                            <div class="frame-corner frame-tr"></div>
+                            <div class="frame-corner frame-bl"></div>
+                            <div class="frame-corner frame-br"></div>
+                            <div class="about-image-placeholder">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>ARMANDO STUDIOS</span>
+                            </div>
+                        </div>
+                        <div class="about-float-card">
+                            <div class="float-icon"><i class="fas fa-film"></i></div>
+                            <div>
+                                <strong data-i18n="about_float_years">+7 Años</strong>
+                                <span data-i18n="about_float_label">en la industria</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <p class="about-lead" data-i18n="about_lead">
+                        Soy un apasionado por la tecnología y la producción creativa. Me encanta plasmar 
+                        todo lo que se pueda imaginar en una producción audiovisual que conecte, emocione y genere resultados.
+                    </p>
+                    <p data-i18n="about_p2">
+                        Me mantengo a la vanguardia tecnológica, tanto a nivel de inteligencia artificial aplicada 
+                        a la producción, como en redes, comunicaciones y las últimas tendencias del mercado audiovisual. 
+                        Creo firmemente que la innovación constante es la clave para ofrecer producciones que marquen la diferencia.
+                    </p>
+                    <p data-i18n="about_p3" data-i18n-html="true">
+                        Cuento con todo el equipamiento profesional necesario para hacer realidad tu idea: 
+                        desde cámaras y equipos de iluminación hasta sistemas de streaming multicámara y 
+                        estaciones de edición de alto rendimiento. <strong>Tú imaginas, yo me encargo de la 
+                        producción y dirección.</strong>
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-microchip"></i>
+                            <span data-i18n="about_h1">IA Aplicada a Producción</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-broadcast-tower"></i>
+                            <span data-i18n="about_h2">Streaming Profesional</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-video"></i>
+                            <span data-i18n="about_h3">Equipo Completo</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-palette"></i>
+                            <span data-i18n="about_h4">Dirección Creativa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><span class="tag-number">02</span> <span data-i18n="services_tag">SERVICIOS</span></span>
+                <h2 class="section-title" data-i18n="services_title" data-i18n-html="true">Soluciones Creativas<br><span class="text-accent">para tu Marca</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-delay="0">
+                    <div class="service-icon"><i class="fas fa-film"></i></div>
+                    <div class="service-number">01</div>
+                    <h3 data-i18n="svc1_title">Producción Audiovisual</h3>
+                    <p data-i18n="svc1_desc">Videoclips musicales, spots publicitarios, documentales corporativos y contenido audiovisual profesional con narrativa cinematográfica.</p>
+                    <ul class="service-features">
+                        <li data-i18n="svc1_f1">Videoclips musicales</li>
+                        <li data-i18n="svc1_f2">Spots publicitarios</li>
+                        <li data-i18n="svc1_f3">Videos corporativos</li>
+                        <li data-i18n="svc1_f4">Documentales</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="100">
+                    <div class="service-icon"><i class="fas fa-broadcast-tower"></i></div>
+                    <div class="service-number">02</div>
+                    <h3 data-i18n="svc2_title">Transmisiones en Vivo</h3>
+                    <p data-i18n="svc2_desc">Cobertura profesional de eventos con streaming multicámara en alta definición para plataformas digitales y redes sociales.</p>
+                    <ul class="service-features">
+                        <li data-i18n="svc2_f1">Streaming multicámara</li>
+                        <li data-i18n="svc2_f2">Eventos deportivos</li>
+                        <li data-i18n="svc2_f3">Ferias y festivales</li>
+                        <li data-i18n="svc2_f4">Conferencias y congresos</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="200">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <div class="service-number">03</div>
+                    <h3 data-i18n="svc3_title">Diseño Gráfico</h3>
+                    <p data-i18n="svc3_desc">Identidad visual, branding, material publicitario impreso y digital que comunica la esencia de tu marca con impacto visual.</p>
+                    <ul class="service-features">
+                        <li data-i18n="svc3_f1">Identidad de marca</li>
+                        <li data-i18n="svc3_f2">Material publicitario</li>
+                        <li data-i18n="svc3_f3">Diseño para RRSS</li>
+                        <li data-i18n="svc3_f4">Packaging y editorial</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="0">
+                    <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                    <div class="service-number">04</div>
+                    <h3 data-i18n="svc4_title">Publicidad Digital</h3>
+                    <p data-i18n="svc4_desc">Estrategias de marketing digital, campañas publicitarias en redes sociales, Google Ads y contenido optimizado para conversión.</p>
+                    <ul class="service-features">
+                        <li data-i18n="svc4_f1">Campañas en redes sociales</li>
+                        <li data-i18n="svc4_f2">Google Ads & Meta Ads</li>
+                        <li data-i18n="svc4_f3">Email marketing</li>
+                        <li data-i18n="svc4_f4">Estrategia de contenido</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="100">
+                    <div class="service-icon"><i class="fas fa-hashtag"></i></div>
+                    <div class="service-number">05</div>
+                    <h3 data-i18n="svc5_title">Community Management</h3>
+                    <p data-i18n="svc5_desc">Administración integral de redes sociales, creación de contenido, gestión de comunidades y análisis de métricas para crecimiento orgánico.</p>
+                    <ul class="service-features">
+                        <li data-i18n="svc5_f1">Gestión de redes sociales</li>
+                        <li data-i18n="svc5_f2">Creación de contenido</li>
+                        <li data-i18n="svc5_f3">Análisis de métricas</li>
+                        <li data-i18n="svc5_f4">Estrategia de engagement</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="200">
+                    <div class="service-icon"><i class="fas fa-podcast"></i></div>
+                    <div class="service-number">06</div>
+                    <h3 data-i18n="svc6_title">Podcast & Audio</h3>
+                    <p data-i18n="svc6_desc">Producción de podcasts profesionales, grabación de audio en estudio y en locación, edición y postproducción de audio de alta calidad.</p>
+                    <ul class="service-features">
+                        <li data-i18n="svc6_f1">Producción de podcasts</li>
+                        <li data-i18n="svc6_f2">Grabación profesional</li>
+                        <li data-i18n="svc6_f3">Edición y mezcla</li>
+                        <li data-i18n="svc6_f4">Distribución multiplataforma</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="0">
+                    <div class="service-icon"><i class="fas fa-camera"></i></div>
+                    <div class="service-number">07</div>
+                    <h3 data-i18n="svc7_title">Fotografía Profesional</h3>
+                    <p data-i18n="svc7_desc">Sesiones fotográficas para eventos, productos, retratos corporativos y fotografía publicitaria con edición profesional.</p>
+                    <ul class="service-features">
+                        <li data-i18n="svc7_f1">Fotografía de eventos</li>
+                        <li data-i18n="svc7_f2">Fotografía de producto</li>
+                        <li data-i18n="svc7_f3">Retratos corporativos</li>
+                        <li data-i18n="svc7_f4">Retoque y edición</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="100">
+                    <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                    <div class="service-number">08</div>
+                    <h3 data-i18n="svc8_title">Redes & Soporte Técnico</h3>
+                    <p data-i18n="svc8_desc">Configuración de infraestructura de red orientada a streaming, soporte técnico especializado y soluciones de conectividad para eventos.</p>
+                    <ul class="service-features">
+                        <li data-i18n="svc8_f1">Infraestructura de red</li>
+                        <li data-i18n="svc8_f2">Redes para streaming</li>
+                        <li data-i18n="svc8_f3">Soporte técnico</li>
+                        <li data-i18n="svc8_f4">Consultoría tecnológica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><span class="tag-number">03</span> <span data-i18n="exp_tag">EXPERIENCIA</span></span>
+                <h2 class="section-title" data-i18n="exp_title" data-i18n-html="true">Trayectoria<br><span class="text-accent">Profesional</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"><i class="fas fa-network-wired"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge" data-i18n="exp1_badge">7 Años de Experiencia</div>
+                        <h3 data-i18n="exp1_title">Redes y Soporte Técnico</h3>
+                        <p data-i18n="exp1_desc">Experiencia sólida en infraestructura de redes, telecomunicaciones y soporte técnico especializado para empresas de primer nivel.</p>
+                        <div class="timeline-clients">
+                            <span class="client-tag">Telefónica</span>
+                            <span class="client-tag">Noticias Perú</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"><i class="fas fa-broadcast-tower"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge" data-i18n="exp2_badge">Eventos & Streaming</div>
+                        <h3 data-i18n="exp2_title">Eventos y Transmisiones en Vivo</h3>
+                        <p data-i18n="exp2_desc">Cobertura profesional de ferias nacionales, regionales, fiestas patronales, eventos deportivos y culturales con transmisión en vivo multicámara.</p>
+                        <div class="timeline-clients">
+                            <span class="client-tag" data-i18n="exp2_c1">Ferias Nacionales y Regionales - Municipalidades de Ayacucho</span>
+                            <span class="client-tag" data-i18n="exp2_c2">Fiesta Patronal de San Miguel</span>
+                            <span class="client-tag" data-i18n="exp2_c3">Carnavales Ayacuchanos</span>
+                            <span class="client-tag" data-i18n="exp2_c4">Asoc. Cultural Comparsa San Miguel Arcángel</span>
+                            <span class="client-tag">Copa Lamarino</span>
+                            <span class="client-tag">Copa Perú</span>
+                            <span class="client-tag">Rally Patibambino</span>
+                            <span class="client-tag">Rally Lamarino</span>
+                            <span class="client-tag">IESTP San Miguel La Mar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"><i class="fas fa-film"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge" data-i18n="exp3_badge">Producción Musical</div>
+                        <h3 data-i18n="exp3_title">Producción Audiovisual - Videoclips Musicales</h3>
+                        <p data-i18n="exp3_desc">Dirección y producción de videoclips musicales con narrativa cinematográfica, colorización profesional y postproducción de alto nivel.</p>
+                        <div class="timeline-clients">
+                            <span class="client-tag highlight" data-i18n="exp3_c1">Proyecto: Saya de la Lejanía</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"><i class="fas fa-bullhorn"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge" data-i18n="exp4_badge">Publicidad</div>
+                        <h3 data-i18n="exp4_title">Producción Publicitaria Gráfica y Audiovisual</h3>
+                        <p data-i18n="exp4_desc">Creación de material publicitario integral, desde spots audiovisuales hasta diseño gráfico para marcas y negocios locales.</p>
+                        <div class="timeline-clients">
+                            <span class="client-tag">Restaurante El Molino de Junco's</span>
+                            <span class="client-tag">Servicio Técnico Quispe</span>
+                            <span class="client-tag">Fundo Lamarino</span>
+                            <span class="client-tag">Mayordomía San Miguel Arcángel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"><i class="fas fa-hashtag"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">Community Manager</div>
+                        <h3 data-i18n="exp5_title">Gestión de Redes Sociales</h3>
+                        <p data-i18n="exp5_desc">Administración integral de redes sociales, creación de contenido estratégico, gestión de comunidades y análisis de métricas para crecimiento de marca.</p>
+                        <div class="timeline-clients">
+                            <span class="client-tag">Mayordomía San Miguel Arcángel</span>
+                            <span class="client-tag">Radio San Miguel La Mar</span>
+                            <span class="client-tag">Fundo Lamarino</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><span class="tag-number">04</span> <span data-i18n="proj_tag">PROYECTOS</span></span>
+                <h2 class="section-title" data-i18n="proj_title" data-i18n-html="true">Portafolio de<br><span class="text-accent">Producciones</span></h2>
+            </div>
+            <div class="projects-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Todos</button>
+                <button class="filter-btn" data-filter="videoclip">Videoclips</button>
+                <button class="filter-btn" data-filter="streaming">Streaming</button>
+                <button class="filter-btn" data-filter="publicidad" data-i18n="filter_ads">Publicidad</button>
+                <button class="filter-btn" data-filter="rrss" data-i18n="filter_rrss">RRSS</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured" data-category="videoclip" data-aos="fade-up">
+                    <div class="project-thumbnail">
+                        <div class="project-placeholder"><i class="fas fa-music"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Ver proyecto"><i class="fas fa-play"></i></a>
+                        </div>
+                        <span class="project-status status-production"><i class="fas fa-circle"></i> <span data-i18n="status_production">En Producción</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category" data-i18n="proj1_cat">VIDEOCLIP MUSICAL</span>
+                        <h3>Saya de la Lejanía</h3>
+                        <p data-i18n="proj1_desc">Videoclip musical con dirección cinematográfica, capturando la esencia cultural y la tradición musical.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="streaming" data-aos="fade-up" data-delay="100">
+                    <div class="project-thumbnail">
+                        <div class="project-placeholder"><i class="fas fa-broadcast-tower"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Ver proyecto"><i class="fas fa-play"></i></a>
+                        </div>
+                        <span class="project-status status-complete"><i class="fas fa-check-circle"></i> 2026</span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category" data-i18n="proj_cat_live">TRANSMISIÓN EN VIVO</span>
+                        <h3>Feria Nacional Festi LaMar 2026</h3>
+                        <p data-i18n="proj2_desc">Cobertura en vivo completa de la feria nacional con streaming multicámara y producción en tiempo real.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="streaming" data-aos="fade-up" data-delay="200">
+                    <div class="project-thumbnail">
+                        <div class="project-placeholder"><i class="fas fa-broadcast-tower"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Ver proyecto"><i class="fas fa-play"></i></a>
+                        </div>
+                        <span class="project-status status-complete"><i class="fas fa-check-circle"></i> 2026</span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category" data-i18n="proj_cat_live">TRANSMISIÓN EN VIVO</span>
+                        <h3>Expo Patibamba VRAEM 2026</h3>
+                        <p data-i18n="proj3_desc">Cobertura en vivo de la feria nacional Expo Patibamba VRAEM con transmisión profesional multicámara.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="streaming" data-aos="fade-up" data-delay="0">
+                    <div class="project-thumbnail">
+                        <div class="project-placeholder"><i class="fas fa-broadcast-tower"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Ver proyecto"><i class="fas fa-play"></i></a>
+                        </div>
+                        <span class="project-status status-complete"><i class="fas fa-check-circle"></i> 2025</span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category" data-i18n="proj_cat_live">TRANSMISIÓN EN VIVO</span>
+                        <h3>Expo LaMar 2025</h3>
+                        <p data-i18n="proj4_desc">Cobertura profesional en vivo de la feria nacional Expo LaMar con streaming de alta calidad.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="publicidad" data-aos="fade-up" data-delay="100">
+                    <div class="project-thumbnail">
+                        <div class="project-placeholder"><i class="fas fa-utensils"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Ver proyecto"><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category" data-i18n="proj5_cat">VIDEO PUBLICITARIO</span>
+                        <h3>Restaurante El Molino de Junco's</h3>
+                        <p data-i18n="proj5_desc">Video publicitario profesional para restaurante, destacando la gastronomía y ambiente del local.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="streaming" data-aos="fade-up" data-delay="200">
+                    <div class="project-thumbnail">
+                        <div class="project-placeholder"><i class="fas fa-futbol"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Ver proyecto"><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category" data-i18n="proj6_cat">EVENTO DEPORTIVO</span>
+                        <h3>Copa Lamarino</h3>
+                        <p data-i18n="proj6_desc">Cobertura en vivo del torneo deportivo con transmisión multicámara, repeticiones y gráficos en tiempo real.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="streaming" data-aos="fade-up" data-delay="0">
+                    <div class="project-thumbnail">
+                        <div class="project-placeholder"><i class="fas fa-drum"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Ver proyecto"><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category" data-i18n="proj7_cat">EVENTO CULTURAL</span>
+                        <h3 data-i18n="proj7_title">III Encuentro de Marcos Musicales</h3>
+                        <p data-i18n="proj7_desc">Cobertura del III Encuentro de Marcos Musicales de la Comparsa San Miguel Arcángel.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="rrss" data-aos="fade-up" data-delay="100">
+                    <div class="project-thumbnail">
+                        <div class="project-placeholder"><i class="fas fa-seedling"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Ver proyecto"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">COMMUNITY MANAGEMENT</span>
+                        <h3 data-i18n="proj8_title">Manejo de RRSS - Fundo Lamarino</h3>
+                        <p data-i18n="proj8_desc">Administración integral de redes sociales, creación de contenido y estrategia de crecimiento digital.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="rrss" data-aos="fade-up" data-delay="200">
+                    <div class="project-thumbnail">
+                        <div class="project-placeholder"><i class="fas fa-church"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Ver proyecto"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">COMMUNITY MANAGEMENT</span>
+                        <h3 data-i18n="proj9_title">Manejo de RRSS - Mayordomía San Miguel Arcángel</h3>
+                        <p data-i18n="proj9_desc">Gestión de redes sociales, cobertura de eventos y creación de contenido para la comunidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><span class="tag-number">05</span> <span data-i18n="skills_tag">HABILIDADES</span></span>
+                <h2 class="section-title" data-i18n="skills_title" data-i18n-html="true">Herramientas &<br><span class="text-accent">Competencias</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon"><i class="fas fa-desktop"></i></div>
+                    <h3>OBS Studio</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                    <span class="skill-level" data-i18n="level_advanced">AVANZADO</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-delay="50">
+                    <div class="skill-icon"><i class="fas fa-video"></i></div>
+                    <h3>DaVinci Resolve</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="65"></div></div>
+                    <span class="skill-level" data-i18n="level_intermediate">INTERMEDIO</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-delay="100">
+                    <div class="skill-icon"><i class="fas fa-bezier-curve"></i></div>
+                    <h3>Affinity Suite</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="65"></div></div>
+                    <span class="skill-level" data-i18n="level_intermediate">INTERMEDIO</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-delay="150">
+                    <div class="skill-icon"><i class="fas fa-clapperboard"></i></div>
+                    <h3 data-i18n="skill_cinematography">Cinematografía</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="60"></div></div>
+                    <span class="skill-level" data-i18n="level_intermediate">INTERMEDIO</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-delay="200">
+                    <div class="skill-icon"><i class="fas fa-camera-movie"></i></div>
+                    <h3 data-i18n="skill_videography">Videografía</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="60"></div></div>
+                    <span class="skill-level" data-i18n="level_intermediate">INTERMEDIO</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-delay="250">
+                    <div class="skill-icon"><i class="fas fa-wifi"></i></div>
+                    <h3 data-i18n="skill_streaming_net">Redes para Streaming</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                    <span class="skill-level" data-i18n="level_advanced">AVANZADO</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-delay="300">
+                    <div class="skill-icon"><i class="fas fa-photo-film"></i></div>
+                    <h3 data-i18n="skill_video_edit">Edición de Video</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                    <span class="skill-level" data-i18n="level_int_adv">INTERMEDIO-AVANZADO</span>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-delay="350">
+                    <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                    <h3 data-i18n="skill_ai">IA en Producción</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                    <span class="skill-level" data-i18n="level_int_adv">INTERMEDIO-AVANZADO</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><span class="tag-number">06</span> <span data-i18n="contact_tag">CONTACTO</span></span>
+                <h2 class="section-title" data-i18n="contact_title" data-i18n-html="true">¿Tienes un Proyecto<br><span class="text-accent">en Mente?</span></h2>
+                <p class="section-subtitle" data-i18n="contact_subtitle">Hagamos realidad tu visión. Contáctame y conversemos sobre cómo llevar tu idea al siguiente nivel con una producción audiovisual profesional.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:martinarmando16@gmail.com">martinarmando16@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <span class="contact-label">WhatsApp</span>
+                                <a href="https://wa.me/51972806033" target="_blank" rel="noopener noreferrer">+51 972 806 033</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <span class="contact-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/mart%C3%ADn-armando-s-07a5049b/" target="_blank" rel="noopener noreferrer">Martín Armando S.</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="contact-label" data-i18n="contact_location_label">Ubicación</span>
+                                <span data-i18n="contact_location">Lima, Perú — Cobertura en todas las regiones</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-cta">
+                        <a href="https://wa.me/51972806033?text=Hola%20Armando%2C%20me%20interesa%20un%20proyecto%20audiovisual.%20%C2%BFPodemos%20conversar%3F" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-i18n="contact_whatsapp_btn">Escríbeme por WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/placeholder" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" " autocomplete="name">
+                            <label for="name" data-i18n="form_name">Tu Nombre</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" " autocomplete="email">
+                            <label for="email" data-i18n="form_email">Tu Email</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected data-i18n="form_select">Selecciona un servicio</option>
+                                <option value="produccion-audiovisual" data-i18n="form_opt1">Producción Audiovisual</option>
+                                <option value="streaming" data-i18n="form_opt2">Transmisiones en Vivo</option>
+                                <option value="diseno-grafico" data-i18n="form_opt3">Diseño Gráfico</option>
+                                <option value="publicidad-digital" data-i18n="form_opt4">Publicidad Digital</option>
+                                <option value="community-management">Community Management</option>
+                                <option value="podcast">Podcast & Audio</option>
+                                <option value="fotografia" data-i18n="form_opt7">Fotografía</option>
+                                <option value="redes-soporte" data-i18n="form_opt8">Redes & Soporte Técnico</option>
+                                <option value="otro" data-i18n="form_opt9">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                            <label for="message" data-i18n="form_message">Cuéntame sobre tu proyecto</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span data-i18n="form_submit">Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">▶</span>
+                    <span class="logo-text">ARMANDO<span class="logo-accent">STUDIOS</span></span>
+                </div>
+                <div class="footer-social">
+                    <a href="https://wa.me/51972806033" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/mart%C3%ADn-armando-s-07a5049b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:martinarmando16@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copy" data-i18n="footer_copy">&copy; 2026 Armando Studios. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/51972806033?text=Hola%20Armando%2C%20me%20interesa%20un%20proyecto%20audiovisual.%20%C2%BFPodemos%20conversar%3F" 
+       class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat en WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip" data-i18n="whatsapp_tooltip">¡Hablemos!</span>
+    </a>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
