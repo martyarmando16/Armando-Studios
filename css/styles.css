@@ -1388,6 +1388,31 @@ body:hover .cursor-outline {
     color: var(--accent);
 }
 
+.skill-icon-svg svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--accent);
+    transition: var(--transition);
+}
+
+.skill-icon-affinity svg image {
+    filter: url(#affinity-gold);
+    transition: var(--transition);
+}
+
+.skill-card:hover .skill-icon-affinity svg image {
+    filter: url(#affinity-dark);
+}
+
+.skill-card:hover .skill-icon-svg svg {
+    fill: var(--bg-primary);
+}
+
+.skill-card:hover .skill-icon {
+    background: var(--gradient-accent);
+    color: var(--bg-primary);
+}
+
 .skill-card h3 {
     font-family: var(--font-heading);
     font-size: 0.95rem;
@@ -1828,6 +1853,10 @@ body:hover .cursor-outline {
         width: 40px;
         height: 40px;
         font-size: 0.85rem;
+    }
+
+    .hero {
+        padding-top: 80px;
     }
 
     .cine-bar {
