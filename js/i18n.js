@@ -26,7 +26,7 @@ const translations = {
         about_title: 'La Visión Detrás<br><span class="text-accent">de la Cámara</span>',
         about_float_years: '+7 Años',
         about_float_label: 'en la industria',
-        about_lead: 'Soy un apasionado por la tecnología y la producción creativa. Me encanta plasmar todo lo que se pueda imaginar en una producción audiovisual que conecte, emocione y genere resultados.',
+        about_lead: 'Soy un apasionado por la producción creativa y la tecnología. Me encanta plasmar todo lo que se pueda imaginar en una producción audiovisual que conecte, emocione y genere resultados.',
         about_p2: 'Me mantengo a la vanguardia tecnológica, tanto a nivel de inteligencia artificial aplicada a la producción, como en redes, comunicaciones y las últimas tendencias del mercado audiovisual. Creo firmemente que la innovación constante es la clave para ofrecer producciones que marquen la diferencia.',
         about_p3: 'Cuento con todo el equipamiento profesional necesario para hacer realidad tu idea: desde cámaras y equipos de iluminación hasta sistemas de streaming multicámara y estaciones de edición de alto rendimiento. <strong>Tú imaginas, yo me encargo de la producción y dirección.</strong>',
         about_h1: 'IA Aplicada a Producción',
@@ -38,8 +38,8 @@ const translations = {
         services_tag: 'SERVICIOS',
         services_title: 'Soluciones Creativas<br><span class="text-accent">para tu Marca</span>',
         svc1_title: 'Producción Audiovisual',
-        svc1_desc: 'Videoclips musicales, spots publicitarios, documentales corporativos y contenido audiovisual profesional con narrativa cinematográfica.',
-        svc1_f1: 'Videoclips musicales', svc1_f2: 'Spots publicitarios', svc1_f3: 'Videos corporativos', svc1_f4: 'Documentales',
+        svc1_desc: 'Videoclips musicales, spots publicitarios, filmación de eventos sociales, videos corporativos y contenido audiovisual profesional con narrativa cinematográfica.',
+        svc1_f1: 'Videoclips musicales', svc1_f2: 'Spots publicitarios', svc1_f3: 'Filmación de eventos sociales', svc1_f4: 'Documentales',
         svc2_title: 'Transmisiones en Vivo',
         svc2_desc: 'Cobertura profesional de eventos con streaming multicámara en alta definición para plataformas digitales y redes sociales.',
         svc2_f1: 'Streaming multicámara', svc2_f2: 'Eventos deportivos', svc2_f3: 'Ferias y festivales', svc2_f4: 'Conferencias y congresos',
@@ -84,6 +84,9 @@ const translations = {
         exp4_desc: 'Creación de material publicitario integral, desde spots audiovisuales hasta diseño gráfico para marcas y negocios locales.',
         exp5_title: 'Gestión de Redes Sociales',
         exp5_desc: 'Administración integral de redes sociales, creación de contenido estratégico, gestión de comunidades y análisis de métricas para crecimiento de marca.',
+        exp6_badge: 'PODCAST',
+        exp6_title: 'Producción de programa Podcast',
+        exp6_desc: 'Producción, realización, dirección y operación técnica integral de programas de podcast, garantizando una óptima calidad sonora, continuidad técnica y fluidez en la conducción.',
 
         // Projects
         proj_tag: 'PROYECTOS',
@@ -109,6 +112,8 @@ const translations = {
         proj8_desc: 'Administración integral de redes sociales, creación de contenido y estrategia de crecimiento digital.',
         proj9_title: 'Manejo de RRSS - Mayordomía San Miguel Arcángel',
         proj9_desc: 'Gestión de redes sociales, cobertura de eventos y creación de contenido para la comunidad.',
+        proj10_cat: 'PODCAST & AUDIO',
+        proj10_desc: 'Programa de Streaming y Podcast Musical Multiplataforma (YouTube, TikTok, Facebook)',
 
         // Skills
         skills_tag: 'HABILIDADES',
@@ -170,7 +175,7 @@ const translations = {
         about_title: 'The Vision Behind<br><span class="text-accent">the Camera</span>',
         about_float_years: '+7 Years',
         about_float_label: 'in the industry',
-        about_lead: 'I\'m passionate about technology and creative production. I love bringing everything imaginable to life through audiovisual productions that connect, inspire, and deliver results.',
+        about_lead: 'I\'m passionate about creative production and technology. I love bringing everything imaginable to life through audiovisual productions that connect, inspire, and deliver results........',
         about_p2: 'I stay at the forefront of technology, from AI applied to production to networking, communications, and the latest audiovisual market trends. I firmly believe that constant innovation is the key to delivering productions that make a difference.',
         about_p3: 'I have all the professional equipment needed to make your idea a reality: from cameras and lighting gear to multi-camera streaming systems and high-performance editing workstations. <strong>You imagine it, I handle the production and direction.</strong>',
         about_h1: 'AI-Powered Production',
@@ -182,8 +187,8 @@ const translations = {
         services_tag: 'SERVICES',
         services_title: 'Creative Solutions<br><span class="text-accent">for Your Brand</span>',
         svc1_title: 'Audiovisual Production',
-        svc1_desc: 'Music videos, commercials, corporate documentaries, and professional audiovisual content with cinematic storytelling.',
-        svc1_f1: 'Music videos', svc1_f2: 'Commercials', svc1_f3: 'Corporate videos', svc1_f4: 'Documentaries',
+        svc1_desc: 'Music videos, commercials, social events filming, corporate videos, and professional audiovisual content with cinematic storytelling.',
+        svc1_f1: 'Music videos', svc1_f2: 'Commercials', svc1_f3: 'Social events filming', svc1_f4: 'Documentaries',
         svc2_title: 'Live Streaming',
         svc2_desc: 'Professional event coverage with multi-camera HD streaming for digital platforms and social media.',
         svc2_f1: 'Multi-camera streaming', svc2_f2: 'Sports events', svc2_f3: 'Fairs & festivals', svc2_f4: 'Conferences & summits',
@@ -228,6 +233,9 @@ const translations = {
         exp4_desc: 'Creation of comprehensive advertising material, from audiovisual spots to graphic design for local brands and businesses.',
         exp5_title: 'Social Media Management',
         exp5_desc: 'Comprehensive social media management, strategic content creation, community management, and metrics analysis for brand growth.',
+        exp6_badge: 'PODCAST',
+        exp6_title: 'Podcast Show Production',
+        exp6_desc: 'End-to-end production, realization, direction, and technical operations for podcast programs, ensuring optimal sound quality, technical continuity, and host flow.',
 
         // Projects
         proj_tag: 'PROJECTS',
@@ -253,6 +261,8 @@ const translations = {
         proj8_desc: 'Comprehensive social media management, content creation, and digital growth strategy.',
         proj9_title: 'Social Media Mgmt - Mayordomía San Miguel Arcángel',
         proj9_desc: 'Social media management, event coverage, and content creation for the community.',
+        proj10_cat: 'PODCAST & AUDIO',
+        proj10_desc: 'Multiplatform Musical Streaming and Podcast Program (YouTube, TikTok, Facebook)',
 
         // Skills
         skills_tag: 'SKILLS',
