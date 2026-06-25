@@ -119,7 +119,7 @@ const translations = {
         proj10_desc: 'Programa de Streaming y Podcast Musical Multiplataforma (YouTube, TikTok, Facebook)',
         proj11_cat: 'DISEÑO GRÁFICO',
         proj11_title: 'Catálogo de Cúrcuma — APAFRUT',
-        proj11_desc: 'Catálogo corporativo de producto para la Asociación de Productores Agropecuarios y Forestales de Ucayali, destacando la cúrcuma orgánica del VRAEM.',
+        proj11_desc: 'Catálogo corporativo de producto para la ASOCIACION DE PRODUCTORES AGROPECUARIOS DE FRUTOS DEL VRAEM, destacando la cúrcuma orgánica del VRAEM.',
         proj12_title: 'Presentación Corporativa — APAFRUT',
         proj12_desc: 'Presentación institucional de APAFRUT para ferias, eventos y clientes, con identidad visual y fotografía profesional de campo.',
         pdf_open: 'Abrir PDF',
