@@ -87,6 +87,9 @@ const translations = {
         exp6_badge: 'PODCAST',
         exp6_title: 'Producción de programa Podcast',
         exp6_desc: 'Producción, realización, dirección y operación técnica integral de programas de podcast, garantizando una óptima calidad sonora, continuidad técnica y fluidez en la conducción.',
+        exp7_badge: 'DISEÑO GRÁFICO Y FOTOGRAFÍA PROFESIONAL',
+        exp7_title: 'Brochure Corporativo & Identidad Visual',
+        exp7_desc: 'Creación de identidad corporativa y material institucional para VRAEMFRUITS y APAFRUT. El trabajo incluyó diseño de imagotipos, brochure corporativo y una sesión fotográfica profesional con tomas aéreas y registro en campo para fortalecer la imagen de marca.',
 
         // Projects
         proj_tag: 'PROYECTOS',
@@ -114,6 +117,12 @@ const translations = {
         proj9_desc: 'Gestión de redes sociales, cobertura de eventos y creación de contenido para la comunidad.',
         proj10_cat: 'PODCAST & AUDIO',
         proj10_desc: 'Programa de Streaming y Podcast Musical Multiplataforma (YouTube, TikTok, Facebook)',
+        proj11_cat: 'DISEÑO GRÁFICO',
+        proj11_title: 'Catálogo de Cúrcuma — APAFRUT',
+        proj11_desc: 'Catálogo corporativo de producto para la Asociación de Productores Agropecuarios y Forestales de Ucayali, destacando la cúrcuma orgánica del VRAEM.',
+        proj12_title: 'Presentación Corporativa — APAFRUT',
+        proj12_desc: 'Presentación institucional de APAFRUT para ferias, eventos y clientes, con identidad visual y fotografía profesional de campo.',
+        pdf_open: 'Abrir PDF',
 
         // Skills
         skills_tag: 'HABILIDADES',
@@ -236,6 +245,9 @@ const translations = {
         exp6_badge: 'PODCAST',
         exp6_title: 'Podcast Show Production',
         exp6_desc: 'End-to-end production, realization, direction, and technical operations for podcast programs, ensuring optimal sound quality, technical continuity, and host flow.',
+        exp7_badge: 'GRAPHIC DESIGN & PROFESSIONAL PHOTOGRAPHY',
+        exp7_title: 'Corporate Brochure & Visual Identity',
+        exp7_desc: 'Creation of corporate identity and institutional materials for VRAEMFRUITS and APAFRUT. The work included imagotype design, a corporate brochure, and a professional photography session with aerial shots and field documentation to strengthen the brand image.',
 
         // Projects
         proj_tag: 'PROJECTS',
@@ -263,6 +275,12 @@ const translations = {
         proj9_desc: 'Social media management, event coverage, and content creation for the community.',
         proj10_cat: 'PODCAST & AUDIO',
         proj10_desc: 'Multiplatform Musical Streaming and Podcast Program (YouTube, TikTok, Facebook)',
+        proj11_cat: 'GRAPHIC DESIGN',
+        proj11_title: 'Turmeric Catalog — APAFRUT',
+        proj11_desc: 'Corporate product catalog for the Ucayali Agricultural and Forestry Producers Association, highlighting organic turmeric from the VRAEM region.',
+        proj12_title: 'Corporate Presentation — APAFRUT',
+        proj12_desc: 'Institutional presentation of APAFRUT for fairs, events and clients, featuring visual identity and professional field photography.',
+        pdf_open: 'Open PDF',
 
         // Skills
         skills_tag: 'SKILLS',

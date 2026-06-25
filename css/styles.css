@@ -1357,6 +1357,59 @@ body:hover .cursor-outline {
     font-size: 0.85rem;
     color: var(--text-secondary);
     line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+/* --- PDF Project Cards --- */
+.project-card--pdf {
+    grid-column: span 3;
+}
+
+.project-pdf-wrapper {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    background: var(--bg-tertiary);
+    overflow: hidden;
+}
+
+.project-pdf-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.project-pdf-wrapper .project-status {
+    z-index: 2;
+}
+
+.pdf-open-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    background: var(--gradient-accent);
+    color: var(--bg-primary);
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+    text-decoration: none;
+    margin-top: 4px;
+}
+
+.pdf-open-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--accent-glow);
+    color: var(--bg-primary);
+}
+
+.pdf-open-btn i {
+    font-size: 0.75rem;
 }
 
 /* --- Skills Section --- */
@@ -1755,6 +1808,10 @@ body:hover .cursor-outline {
     .project-card.featured {
         grid-column: span 2;
     }
+
+    .project-card--pdf {
+        grid-column: span 2;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1832,6 +1889,14 @@ body:hover .cursor-outline {
 
     .project-card.featured {
         grid-column: span 1;
+    }
+
+    .project-card--pdf {
+        grid-column: span 1;
+    }
+
+    .project-pdf-wrapper {
+        height: 380px;
     }
 
     .skills-grid {
